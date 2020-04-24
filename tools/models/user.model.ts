@@ -16,6 +16,10 @@ export class UserModel {
   groups: GroupModel[];
 }
 
+ /*burada UserSchema'mız oluşturuyoruz.
+ Buradaki her feild için onunn type'ni ve bazı ek özellikler yaptık.
+ */
+
 export const UserSchema = new mongoose.Schema({
   name: { type: String, required: [true, 'User name is required'] },
   surname: { type: String, required: [true, 'User surname is required'] },
