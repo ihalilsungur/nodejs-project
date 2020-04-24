@@ -5,8 +5,6 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { AuditModel } from 'tools/models/audit.model';
 
-const result: UserModel[] = [];
-
 @Injectable()
 export class UserService {
   constructor(

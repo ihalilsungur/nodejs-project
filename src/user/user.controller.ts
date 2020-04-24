@@ -30,7 +30,7 @@ export class UserController {
     return await this.userService.update(id, user);
   }
 
-  @Delete('id')
+  @Delete(':id')
   async removeUser(@Param('id') id :string):Promise<UserModel>{
     return await this.userService.delete(id);
   }
